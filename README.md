@@ -40,7 +40,8 @@ Further help
 To get more help on the Angular CLI use `ng help` or go check out the [Angular
 CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-**01-Introduction**
+01-Introduction
+---------------
 
 **Anatomy of an Angular Application**
 
