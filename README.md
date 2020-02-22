@@ -62,3 +62,54 @@ functionality. Every Angular application has at least one Angular module called
 the application's root Angular module*. An application can have any number of
 additional Angular modules, including feature modules that consolidate the
 components for a specific application feature.
+
+**About Modules**
+
+With JavaScript, there's always the problem of namespaces. If we are not
+careful, we can easily end up with variables or functions in the global
+namespace. In addition, JavaScript didn't provide features to help with code
+organization. Modules help resolve these issues. AngularJS has modules to help
+us organize our code and resolve some name spacing issues. TypeScript also has
+modules that help keep things out of the global namespace. ES2015 set a standard
+for defining a module. In ES2015, a module is a file, and a file is a module. So
+when coding in ES2015, we don't need to define or name modules. Just create a
+file, write some code, export or import something, and bang, the file becomes a
+module. Angular leverages ES2015 modules, so as we create code files and import
+or export something, we create the modules for our application. But wait,
+there's more. Angular also has Angular modules. Angular modules are separate and
+different from Angular's implementation of ES2015 modules. Let's look first at
+how Angular makes use of ES2015 modules. Then we'll introduce Angular modules.
+How do ES2015 modules work? Say we create a code file called product.ts and
+export a class named Product from that file. This file then becomes a module.
+Because the class is exported, we can use that class in any other module by
+importing it. So here we have a file called product- list.ts and we import our
+product class. This file also becomes a module because we imported something.
+Notice the syntax here. In curly braces, we define the name we want to import,
+in this case Product, and we define the file we want to import it from. Here we
+want to import from product.js. Wait, what? The product class is in product.ts,
+but when we compile, the TypeScript file is transpiled into an ES5 JavaScript
+file. So at run time, we are importing from the .js file. But notice that we
+don't list the extension here anyway.
+
+![](media/81ed3f80ec70e4ceac5f8f7bfda98276.png)
+
+Now let's look at Angular modules. Angular modules help organize an application
+into cohesive blocks of functionality. Every Angular application has at least
+one Angular module, by convention called AppModule. As an application gets more
+features, we can group those features into their own feature modules. We can
+even define shared or common modules for code used by multiple Angular modules.
+This keeps the code organized and provides a cohesive unit we can load on start,
+or lazy load as it is needed. In each Angular module we declare the set of
+components and other code files associated with the module and the dependencies
+needed by those components. Each component we create is declared in and belongs
+to one, and only one, Angular module. We'll talk much more about Angular modules
+throughout this course. Let's clarify the difference between ES2015 modules and
+Angular modules. ES modules are code files that import or export something.
+Angular modules are code files that organize the application into cohesive
+blocks of functionality. ES modules organize our code files. Angular modules
+organize our application. ES modules modularize our code. Angular modules
+modularize our application. ES modules promote code reuse. Angular modules
+promote boundaries within our application. So ES modules are about code files
+and Angular modules are about our application. To keep these terms straight,
+I'll refer to the ES2015 modules as ES modules and Angular modules as Angular
+modules.
