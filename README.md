@@ -102,14 +102,16 @@ This keeps the code organized and provides a cohesive unit we can load on start,
 or lazy load as it is needed. In each Angular module we declare the set of
 components and other code files associated with the module and the dependencies
 needed by those components. Each component we create is declared in and belongs
-to one, and only one, Angular module. We'll talk much more about Angular modules
-throughout this course. Let's clarify the difference between ES2015 modules and
-Angular modules. ES modules are code files that import or export something.
-Angular modules are code files that organize the application into cohesive
-blocks of functionality. ES modules organize our code files. Angular modules
-organize our application. ES modules modularize our code. Angular modules
-modularize our application. ES modules promote code reuse. Angular modules
-promote boundaries within our application. So ES modules are about code files
-and Angular modules are about our application. To keep these terms straight,
-I'll refer to the ES2015 modules as ES modules and Angular modules as Angular
-modules.
+to one, and only one, Angular module.
+
+![](media/d2588dd937d2b8eb515f944645561918.png)
+
+Let's clarify the difference between ES2015 modules and Angular modules. ES
+modules are code files that import or export something. Angular modules are code
+files that organize the application into cohesive blocks of functionality. ES
+modules organize our code files. Angular modules organize our application. ES
+modules modularize our code. Angular modules modularize our application. ES
+modules promote code reuse. Angular modules promote boundaries within our
+application. So ES modules are about code files and Angular modules are about
+our application. To keep these terms straight, I'll refer to the ES2015 modules
+as ES modules and Angular modules as Angular modules.
